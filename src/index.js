@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MainApp } from './MainApp';
 
 //Components
+import { MainApp } from './MainApp';
 
 
 

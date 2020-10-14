@@ -1,5 +1,7 @@
-import React from 'react'
-import { Navbar } from '../navbar/Navbar'
+import React from 'react';
+
+import { Navbar } from '../navbar/Navbar';
+import { Footer } from '../footer/Footer';
 
 export const HomePage = () => {
     return (
@@ -8,6 +10,8 @@ export const HomePage = () => {
             <h1>esta es la Home</h1>
             <hr />
 
+
+            <Footer />
         </div>
     )
 }

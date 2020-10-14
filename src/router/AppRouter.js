@@ -2,11 +2,10 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
 import { HomePage } from '../components/ui/home/HomePage';
-import { UserDetail } from '../components/users/UserDetail';
+import { UserDetail } from '../components/ui/users/UserDetail';
 
 export const AppRouter = () => {
     return (
