@@ -7,10 +7,13 @@ import { getData } from '../../helpers/getData';
 
 export const HomePage = () => {
 
-    const [users, setUsers] = useState({});
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        setUsers( getData() )
+
+        let usersJson = getData();
+
+        setUsers( usersJson );
     }, [])
 
     return (
@@ -18,6 +21,12 @@ export const HomePage = () => {
             <Navbar />
             <h1>esta es la Home</h1>
             <hr />
+
+            {/* {
+                users.map( item => {
+                    <li key="item.id">{item.id} - {item.name}</li>
+                })
+            } */}
 
             <Footer />
         </>
