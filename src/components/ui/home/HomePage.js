@@ -1,32 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { Navbar } from '../navbar/Navbar';
 import { Footer } from '../footer/Footer';
-import { getData } from '../../helpers/getData';
+import { GetUser } from '../../helpers/GetUser';
+
 
 
 export const HomePage = () => {
+    const { data } = GetUser();
+    // const [users, setUsers] = useState([]);
 
-    const [users, setUsers] = useState([]);
+    // useEffect(() => {
 
-    useEffect(() => {
+    //     let usersJson = getData();
 
-        let usersJson = getData();
+    //     setUsers( usersJson );
+    // }, [])
 
-        setUsers( usersJson );
-    }, [])
 
     return (
         <>
             <Navbar />
             <h1>esta es la Home</h1>
             <hr />
-
-            {/* {
-                users.map( item => {
-                    <li key="item.id">{item.id} - {item.name}</li>
-                })
-            } */}
+            {
+                data
+            }
 
             <Footer />
         </>
