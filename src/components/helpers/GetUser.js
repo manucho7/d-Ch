@@ -8,7 +8,6 @@ export const GetUser = () => {
     axios
       .get('https://jsonfy.com/users')
       .then(result => setData(result.data));
-      
   }, []);
 
   console.log(data);
@@ -19,8 +18,8 @@ export const GetUser = () => {
       <ul>
         {
             data.map(user => (
-                <li key={user.id}>
-                    {user.username}: {user.name}
+                <li key="user.id">
+                    {user.name}: {user.name}
                 </li>
             ))
         }

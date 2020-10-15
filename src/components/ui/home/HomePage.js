@@ -7,16 +7,8 @@ import { GetUser } from '../../helpers/GetUser';
 
 
 export const HomePage = () => {
-    const { data } = GetUser();
-    // const [users, setUsers] = useState([]);
 
-    // useEffect(() => {
-
-    //     let usersJson = getData();
-
-    //     setUsers( usersJson );
-    // }, [])
-
+    const { users } = GetUser();
 
     return (
         <>
@@ -24,7 +16,7 @@ export const HomePage = () => {
             <h1>esta es la Home</h1>
             <hr />
             {
-                data
+                users
             }
 
             <Footer />
