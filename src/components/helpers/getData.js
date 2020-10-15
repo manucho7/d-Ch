@@ -2,25 +2,17 @@
 
 export const getData = async () => {
 
-    const getData = async () => {
-
+    try {
+        
         const url = 'https://jsonfy.com/users';
         const resp = await fetch( url );
-        const data = await resp.json();
-        console.log(data);
-        
-        const users = data.map( (user) => {
-            return {
-                id: user.id,
-                name: user.name
-            }
-        })
-        
+        const users = await resp.json();
         console.log(users);
+        
+        
         return users;
 
+    } catch (error) {
+        console.log(error)
     }
-
-    getData();
-
 }

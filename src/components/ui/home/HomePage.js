@@ -7,25 +7,11 @@ import { getData } from '../../helpers/getData';
 
 export const HomePage = () => {
 
-    const [state, setState] = useState({
-        users: [],
-        loading: true
-    });
+    const [users, setUsers] = useState({});
 
     useEffect(() => {
-
-        getData()
-            .then( users => {
-
-                setState({
-                    data: users,
-                    loading: false
-                })
-
-            }
-    )}, [])
-
-
+        setUsers( getData() )
+    }, [])
 
     return (
         <>
