@@ -7,7 +7,8 @@ import axios from "axios";
 export const HomePage = () => {
 
     const [data, setData] = useState([]);
-
+    const [currentUserId, setCurrentUserId] = useState('');
+    
     useEffect(() => {
       axios
         .get('https://jsonfy.com/users')
@@ -26,12 +27,23 @@ export const HomePage = () => {
             <ul>
                 {
                     data.map(user => (
-                        <li key="user.id">
+                        <li 
+                            key="user.id"
+                            onClick={ () => {
+                                setCurrentUserId( user.id )
+                            }}
+                        >
                             {user.id}: {user.name}
                         </li>
                     ))
                 }
             </ul>
+            
+            {/* <div>
+                {
+                    data.find(currentUserId)
+                }
+            </div> */}
 
             <Footer />
         </>
