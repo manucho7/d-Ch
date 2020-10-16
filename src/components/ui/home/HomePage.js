@@ -4,6 +4,8 @@ import { Navbar } from '../navbar/Navbar';
 import { Footer } from '../footer/Footer';
 import axios from "axios";
 
+import './homepage.css';
+
 export const HomePage = () => {
 
     const [data, setData] = useState([]);
@@ -21,7 +23,7 @@ export const HomePage = () => {
     return (
         <>
             <Navbar />
-            <h1>esta es la Home</h1>
+            <h1>Desitec challenge</h1>
             <hr />
 
             <ul>

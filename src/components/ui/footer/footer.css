@@ -1,0 +1,14 @@
+.desilogo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.DesiLink {
+    background-color: lightgreen;
+    display: flex;
+    font-size: 25px;
+}
+
+.footer {
+    background-color: lightgreen;
+}
