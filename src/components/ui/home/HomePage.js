@@ -18,7 +18,7 @@ export const HomePage = () => {
     }, []);
 
     console.log(data);
-    console.log(data[0]);
+    console.log(currentUserId);
 
     return (
         <>
@@ -42,8 +42,10 @@ export const HomePage = () => {
             </ul>
             
             {/* <div>
-                {
-                    data.find(currentUserId)
+                {   
+                    ( data !== [] ) ?
+                    data.find(currentUserId):
+                    ''     
                 }
             </div> */}
 
