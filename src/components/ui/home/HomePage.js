@@ -17,7 +17,6 @@ export const HomePage = () => {
         .then(result => setData(result.data));
     }, []);
 
-    console.log(data);
     console.log(currentUserId);
 
     return (

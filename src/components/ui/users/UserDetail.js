@@ -15,6 +15,7 @@ export const UserDetail = () => {
       }, []);
   
     console.log(data);
+    console.log(inputValue);
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -23,7 +24,6 @@ export const UserDetail = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
     }
-
 
     return (
         <div>
@@ -43,7 +43,7 @@ export const UserDetail = () => {
 
             {
                 data.map( user => (
-                   <li key="user.id">{user.name}</li> 
+                    <li key="user.id">{user.id}: {user.name}: {user.email}: {user.phone} </li>
                 ))
             }
 
