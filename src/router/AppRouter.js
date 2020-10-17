@@ -4,8 +4,8 @@ import {
     Switch,
     Route
   } from "react-router-dom";
-import { HomePage } from '../components/ui/home/HomePage';
-import { UserDetail } from '../components/ui/users/UserDetail';
+import { HomePage } from '../components/ui/Home';
+import { UserDetail } from '../components/ui/UserDetail';
 
 export const AppRouter = () => {
     return (
