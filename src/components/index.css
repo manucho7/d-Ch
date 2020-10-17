@@ -1,0 +1,17 @@
+html {
+}
+
+.page .content {
+    max-width: 980px;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.page .title {
+    padding: 1.5rem 0 1.5rem 0;
+    font-weight: 100;
+}
+
+.btn-navigation img {
+    transform: translateX(5px) scale(.9);
+}

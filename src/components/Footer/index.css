@@ -1,0 +1,49 @@
+
+.footer {
+    background-color: #319cff9e;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.footer img {
+    margin: .5rem;
+    height: 5rem;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.desilogo {
+    align-items: center;
+    border: 3px solid green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.author {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .footer {
+        padding: .5rem 1rem;
+    }
+    .footer img {
+        height: 3rem;
+    }
+
+}
