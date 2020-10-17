@@ -11,14 +11,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Inicio
-            </Link>
-
-            <Link 
-                className="navbar-brand" 
-                to="./:id"
-            >
-                User Details
+                Home
             </Link>
             
         </nav>
