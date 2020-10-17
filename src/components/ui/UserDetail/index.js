@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import axios from "axios";
 import { Footer } from '../Footer';
 import { Navbar } from '../Navbar';
-import axios from "axios";
 import { UserProfile } from '../UserProfile';
 
 export const UserDetail = () => {
 
     const { id } = useParams();
     const history = useHistory();
-    const [user, setUser] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-    const [msgError, setMsgError] = useState('');
+    const [ user, setUser ] = useState(null);
+    const [ isLoading, setIsLoading ] = useState(true);
+    const [ msgError, setMsgError ] = useState('');
 
 
     useEffect(() => {
@@ -48,10 +48,9 @@ export const UserDetail = () => {
             <hr />
 
             {
-                user ? <UserProfile pepa={user}/> : null
+                user ? <UserProfile user={user}/> : null
             }
 
-            
             <Footer />
         </div>
     )

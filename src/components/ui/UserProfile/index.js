@@ -1,13 +1,11 @@
 import React from 'react';
 
-export const UserProfile = ({ pepa }) => {
+export const UserProfile = ({ user }) => {
 
-    const { username, email, age, website, phone, date_add } = pepa;
+    const { username, email, age, website, phone } = user;
 
     return (
         <article>
-            <h1>Detalle del usuario: </h1>
-
             <dt> Name: </dt>
             <dd> {username} </dd>
 
@@ -19,6 +17,9 @@ export const UserProfile = ({ pepa }) => {
 
             <dt> Website: </dt>
             <dd> {website} </dd>
+
+            <dt> Phone: </dt>
+            <dd> {phone} </dd>
 
         </article>
     )
