@@ -1,3 +1,12 @@
+# Para iniciar el proyecto es necesario : 
+1.- git clone
+2.- npm install una vez situado en el directorio d-challenge
+3.- npm start para levantar el servidor y poder visualizar en localhost:3000 el proyecto
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
