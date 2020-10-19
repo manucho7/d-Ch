@@ -1,7 +1,7 @@
 # Para iniciar el proyecto es necesario : 
-1.- git clone
-2.- npm install una vez situado en el directorio d-challenge
-3.- npm start para levantar el servidor y poder visualizar en localhost:3000 el proyecto
+1.- git clone para descargar el proyecto localmente
+2.- npm install una vez situado en el directorio d-challenge en su terminal
+3.- npm start para levantar el servidor y poder visualizar en localhost:3000 
 
 
 
