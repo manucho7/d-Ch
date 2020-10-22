@@ -43,12 +43,16 @@
 
 }
 
+    /* Hover listed-item effect  */
+
 .home-page .user-list .user-list-item:hover {
     cursor: pointer;
     background-color: rgba(211, 211, 211, 0.11);
     transition: all .5s;
     transform: translateY(3px);
 }
+
+/* Active listed-item animation on click  */
 
 .home-page .user-list .user-list-item:active {
     transform: scale(.9);
